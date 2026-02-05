@@ -17,3 +17,4 @@ D:\Users\BSI\Downloads\20250704Architect04Course009RabbitMQ-03\Zhaoxi.RabbitSamp
 D:\Users\BSI\Downloads\20250704Architect04Course009RabbitMQ-03\Zhaoxi.RabbitSample\Zhaoxi.RabbitSample.ProducerApp\obj\Debug\net8.0\Zhaoxi.RabbitSample.ProducerApp.pdb
 D:\Users\BSI\Downloads\20250704Architect04Course009RabbitMQ-03\Zhaoxi.RabbitSample\Zhaoxi.RabbitSample.ProducerApp\obj\Debug\net8.0\Zhaoxi.RabbitSample.ProducerApp.genruntimeconfig.cache
 D:\Users\BSI\Downloads\20250704Architect04Course009RabbitMQ-03\Zhaoxi.RabbitSample\Zhaoxi.RabbitSample.ProducerApp\obj\Debug\net8.0\ref\Zhaoxi.RabbitSample.ProducerApp.dll
+D:\Users\BSI\Downloads\20250704Architect04Course009RabbitMQ-03\Zhaoxi.RabbitSample\Zhaoxi.RabbitSample.ProducerApp\obj\Debug\net8.0\Zhaoxi.RabbitSample.ProducerApp.sourcelink.json
