@@ -12,11 +12,10 @@ namespace Zhaoxi.RabbitSample.ProducerApp
         {
             var factory = new ConnectionFactory
             {
-                HostName = "127.0.0.1",
-                Port = 5572,
+                HostName = "34.92.235.102",
+                Port     = 5672,
                 UserName = "admin",
-                Password = "admin",
-                VirtualHost = "my_vhost"
+                Password = "123123",
             };
 
             await using var connection = await factory.CreateConnectionAsync();

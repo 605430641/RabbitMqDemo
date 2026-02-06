@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Zhaoxi.RabbitSample.ConsumerApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d6bce7802fe08a6335968f3105adc1a1cd1b2466")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+41349c46b9aa8bea2684c19ca72604eeb1231a24")]
 [assembly: System.Reflection.AssemblyProductAttribute("Zhaoxi.RabbitSample.ConsumerApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Zhaoxi.RabbitSample.ConsumerApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -4,7 +4,7 @@ using RabbitMQ.Client;
 namespace Zhaoxi.RabbitSample.ProducerApp
 {
     /// <summary>
-    /// TTL 消息存活时间 
+    /// TTL 消息存活时间   设置消息过期时间 没有消费者消费消息，消息过期后会被删除
     /// </summary>
     public static class Sample01
     {
@@ -12,10 +12,10 @@ namespace Zhaoxi.RabbitSample.ProducerApp
         {
             var factory = new ConnectionFactory
             {
-                HostName = "192.168.2.5",
-                Port = 5672,
-                UserName = "admin",
-                Password = "admin"
+                HostName    = "34.92.235.102",
+                Port        = 5672,
+                UserName    = "admin",
+                Password    = "123123",
             };
 
             await using var connection = await factory.CreateConnectionAsync();

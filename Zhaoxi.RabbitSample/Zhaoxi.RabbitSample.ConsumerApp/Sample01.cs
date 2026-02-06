@@ -5,7 +5,7 @@ using RabbitMQ.Client.Events;
 namespace Zhaoxi.RabbitSample.ConsumerApp
 {
     /// <summary>
-    /// TTL 消息存活时间 
+    /// TTL 消息存活时间 消费者
     /// </summary>
     public static class Sample01
     {
@@ -13,10 +13,10 @@ namespace Zhaoxi.RabbitSample.ConsumerApp
         {
             var factory = new ConnectionFactory
             {
-                HostName = "192.168.2.5",
-                Port = 5672,
+                HostName = "34.92.235.102",
+                Port     = 5672,
                 UserName = "admin",
-                Password = "admin"
+                Password = "123123",
             };
 
             await using var connection = await factory.CreateConnectionAsync();

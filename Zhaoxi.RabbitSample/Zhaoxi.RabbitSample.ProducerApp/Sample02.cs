@@ -4,7 +4,7 @@ using RabbitMQ.Client;
 namespace Zhaoxi.RabbitSample.ProducerApp
 {
     /// <summary>
-    /// 延迟队列
+    /// 延迟队列 放到延迟队列的消息过期后会发送到死信队列里面
     /// </summary>
     public static class Sample02
     {
@@ -12,25 +12,25 @@ namespace Zhaoxi.RabbitSample.ProducerApp
         {
             var factory = new ConnectionFactory
             {
-                HostName = "192.168.2.5",
-                Port = 5672,
+                HostName = "34.92.235.102",
+                Port     = 5672,
                 UserName = "admin",
-                Password = "admin"
+                Password = "123123",
             };
 
             await using var connection = await factory.CreateConnectionAsync();
             await using var channel = await connection.CreateChannelAsync();
 
-            // 声明订单队列作为延迟队列
+            // 声明订单队列作为延迟队列  放到延迟队列的消息过期后会发送到死信队列里面
             const string orderQueueName = "sample.order.queue";
             await channel.QueueDeclareAsync(orderQueueName, false, false, false,
                 new Dictionary<string, object?>
                 {
-                    // 设置默认 TTL 60秒
+                    // 设置默认 TTL（默认过期时间） 60秒
                     { "x-message-ttl", 60000 },
-                    // 死信交换机
+                    // 死信交换机 当消息过期或被拒绝时，消息会被发送到这个交换机
                     { "x-dead-letter-exchange", "sample.dl.exchange" },
-                    // 死信路由键
+                    // 死信路由键  当消息被发送到死信交换机时，使用这个路由键进行路由
                     { "x-dead-letter-routing-key", "sample.dl.order" }
                 });
 

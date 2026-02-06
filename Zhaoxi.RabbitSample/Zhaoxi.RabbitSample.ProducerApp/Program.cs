@@ -1,3 +1,3 @@
 ﻿using Zhaoxi.RabbitSample.ProducerApp;
 
-await Sample07.Run();
+await Sample03.Run();
